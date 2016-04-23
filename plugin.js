@@ -29,7 +29,7 @@ module.exports = function loadPlugin(projectPath, Plugin) {
 
   plugin.events.on('render-javascript-tags:before:render', function (data) {
     // add locale file for non en-us locales
-    if (data.context.locale && data.context.locale !== 'en-us') {
+    if (data.location == 'footer' && data.context.locale && data.context.locale !== 'en-us') {
       data.files.push(
         '/public/plugin/we-plugin-editor-summernote/files/summernote/lang/summernote-'+
         data.context.locale + '.js'
