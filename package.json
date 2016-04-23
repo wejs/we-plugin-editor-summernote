@@ -1,7 +1,7 @@
 {
   "name": "we-plugin-editor-summernote",
   "description": "We.js plugin for add summernote html field with editor in project",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "plugin.js",
   "repository": {
     "type": "git",
